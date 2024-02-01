@@ -1,16 +1,28 @@
 import "../App.css";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import HelloWorld from "./HelloWorld/HelloWorld";
-import Home from "./Home/Home";
-import UserClicks from "./UserClicks/UserClicks";
+import Home from "./HomeScreen/Home/Home";
+import UserClicks from "./UserClicks/OneButton/UserClicks";
+import MultipleButtons from "./UserClicks/MultipleButtons/MultipleButtons";
+import HomeScreen from "./HomeScreen/HomeScreen";
 
 function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HomeScreen />} />
         <Route path="/hei-verden" element={<HelloWorld />} />
         <Route path="/click-me" element={<UserClicks />} />
+        <Route path="click-multiple-buttons" element={<MultipleButtons />} />
+        <Route
+          path="*"
+          element={
+            <>
+              <Home />
+              <h1>404 Page not found</h1>
+            </>
+          }
+        />
       </Routes>
     </Router>
   );
