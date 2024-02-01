@@ -16,6 +16,9 @@ export default function Home() {
         <a href="click-multiple-buttons" className={style}>
           Click Multiple Buttons
         </a>
+        <a href="button-counter" className={style}>
+          Button Counter
+        </a>
 
         <a href="/" className={style}>
           Home

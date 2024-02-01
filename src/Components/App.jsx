@@ -5,6 +5,7 @@ import Home from "./HomeScreen/Home/Home";
 import UserClicks from "./UserClicks/OneButton/UserClicks";
 import MultipleButtons from "./UserClicks/MultipleButtons/MultipleButtons";
 import HomeScreen from "./HomeScreen/HomeScreen";
+import CountingButton from "./UserClicks/CountingButton/CountingButton";
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path="/hei-verden" element={<HelloWorld />} />
         <Route path="/click-me" element={<UserClicks />} />
         <Route path="click-multiple-buttons" element={<MultipleButtons />} />
+        <Route path='/button-counter' element={<CountingButton />} />
         <Route
           path="*"
           element={
