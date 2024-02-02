@@ -5,7 +5,7 @@ const style =
 
 export default function Home() {
   return (
-    <div className=" m-auto flex justify-center mb-10 mt-10">
+    <div className=" m-auto flex justify-center mb-10 pt-10">
       <div>
         <a href="/hei-verden" className={style}>
           Hello World
@@ -18,6 +18,9 @@ export default function Home() {
         </a>
         <a href="button-counter" className={style}>
           Button Counter
+        </a>
+        <a href="mapping-array" className={style}>
+          Mapping Array
         </a>
 
         <a href="/" className={style}>
