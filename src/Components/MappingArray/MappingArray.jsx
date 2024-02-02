@@ -9,11 +9,11 @@ export default function MappingArray() {
       <Home />
       <div className="flex flex-col items-center justify-center min-h-screen bg-yellow-200 text-center">
         <h1 className="text-4xl mb-8">Animals</h1>
-        {animals.map((animal, index) => (
-          <div key={index} className="mb-4">
-            <h1 className="text-2xl text-blue-600">{animal}</h1>
-          </div>
-        ))}
+        <ul>
+          {animals.map((animal, index) => (
+            <li className="text-2xl text-blue-600">{animal}</li>
+          ))}
+        </ul>
       </div>
     </div>
   );
